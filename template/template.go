@@ -144,6 +144,9 @@ var DefaultFuncs = FuncMap{
 	"safeHtml": func(text string) tmplhtml.HTML {
 		return tmplhtml.HTML(text)
 	},
+	"escapeURL": func(text string) tmplhtml.HTMLEscapeString {
+		return tmplhtml.HTMLEscapeString(text)
+	},
 	"reReplaceAll": func(pattern, repl, text string) string {
 		re := regexp.MustCompile(pattern)
 		return re.ReplaceAllString(text, repl)

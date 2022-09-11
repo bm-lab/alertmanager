@@ -20,6 +20,6 @@ jobs:
           github_token: ${{ secrets.RELEASER }}
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
-          goversion: "https://dl.google.com/go/go1.15.4.linux-amd64.tar.gz"
+          goversion: "https://dl.google.com/go/go1.18.1.linux-amd64.tar.gz"
           binary_name: alertmanager
           sha256sum: "TRUE"
